@@ -2,14 +2,13 @@ package co.edu.uniquindio.programacion3.sigecim.billeteravirtual.Factory.Inter;
 
 import java.time.LocalDate;
 
-public class Transaccion {
+public abstract class Transaccion {
     private int idTransaccion;
     private LocalDate fecha;
     private int monto;
     private String descripcionBreve;
 
-    public Transaccion(int idTransaccion, LocalDate fecha, int monto,
-                       String descripcionBreve) {
+    public Transaccion() {
         this.idTransaccion = idTransaccion;
         this.fecha = fecha;
         this.monto = monto;
